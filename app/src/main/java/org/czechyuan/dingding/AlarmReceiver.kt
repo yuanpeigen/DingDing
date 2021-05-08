@@ -30,7 +30,7 @@ class AlarmReceiver : BroadcastReceiver() {
                 Handler().postDelayed(Runnable {
                     ScreenAndLockControl.screenOffAndLock(context)
                     LogUtil.i("息屏锁定", getCurrentTime())
-                }, 2000)
+                }, 5000L)
             }
         }
     }

@@ -79,7 +79,7 @@ class DingDingService : Service() {
             Handler().postDelayed(Runnable {
                 ScreenAndLockControl.screenOffAndLock(applicationContext)
                 LogUtil.i("使者-息屏锁定", getCurrentTime())
-            }, 2000)
+            }, SCREEN_WAITING_TIME)
             isChecked = true
         }
         if (!isChecked && currentHour == 23) {
@@ -212,6 +212,7 @@ class DingDingService : Service() {
         private const val TRIGGER_TIME_HOUR = 8
         private const val TRIGGER_TIME_MINUTE_MIN = 23
         private const val TRIGGER_TIME_MINUTE_MAX = 26
+        private const val SCREEN_WAITING_TIME = 5000L
         private const val NOTIFICATION_NAME = "望穿秋水露"
         private const val NOTIFICATION_ID = "DingDingService"
     }
