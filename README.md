@@ -1,3 +1,2 @@
 # DingDing
-钉钉自动打卡
-（依赖于钉钉开启自动打卡设置）
+Dingding automatic clocking (depends on Dingding opening automatic clocking setting)
